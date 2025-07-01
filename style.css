@@ -540,22 +540,17 @@ h1::first-letter {
     gap: 10px;
   }
 
-  .dishes {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 40px;
-  padding-right: 10px;
-  z-index: 0;
-}
+   .dishes {
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
+  }
 
-.dishes img {
-  height: 180px;
-  width: auto;
-  object-fit: cover;
-  border-radius: 90px 0 0 90px;
-  opacity: 0.8;
-}
+  .dishes img {
+    height: 160px;
+    border-radius: 40px;
+  }
+
 
 
 .container {
