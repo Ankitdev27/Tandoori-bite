@@ -528,7 +528,7 @@ h1::first-letter {
   }
 
   .hungry button{
-    margin-left: -40px;
+    margin-left: 40px;
   }
   .hungry span {
     font-size: 2.2rem;
@@ -551,7 +551,7 @@ h1::first-letter {
   .dishes img {
     height: 160px;
     border-radius: 40px;
-    margin-right: -70px;
+    margin-right: 90px;
   }
 
 
