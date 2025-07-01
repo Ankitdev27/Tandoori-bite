@@ -482,15 +482,113 @@ h1::first-letter {
   }
 }
 
-.end {
-  background-color: #333;
-  display: flex;
-  justify-content: center;
-  padding: 15px;
-}
+@media (max-width: 480px) {
 
-.end p {
-  color: white;
-  font-size: 1rem;
-  text-align: center;
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .nav-links li a {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+    margin: 0;
+  }
+
+  .yes {
+    font-size: 0.9rem;
+    padding: 6px 14px;
+    margin-right: 0;
+  }
+
+  .hero-block {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+
+  .dishes {
+    position: relative;
+    right: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dishes img {
+    height: 200px;
+    margin-left: 20px;
+  }
+
+  .container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .hero {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .hero img {
+    width: 140px;
+    height: 130px;
+  }
+
+  .Favorite h2,
+  .Favorite h3,
+  .Favorite h4,
+  .Favorite p {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .action {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu-items {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  .menu-items .item {
+    flex: 0 0 auto;
+    width: 180px;
+  }
+
+  .contact form {
+    padding: 0 10px;
+  }
+
+  .end {
+    text-align: center;
+    padding: 10px;
+  }
 }
