@@ -376,7 +376,12 @@ h1::first-letter {
 }
 
 @media (max-width: 480px) {
-  /* Navbar stays horizontal and scrollable if needed */
+  /* Prevent screen from stretching horizontally */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Navbar stays horizontal, smaller font, no overflow */
   .nav-links {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -385,12 +390,13 @@ h1::first-letter {
   }
 
   .nav-links li a {
-    font-size: 1rem;
-    padding: 10px 15px;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    margin-right: 10px;
     white-space: nowrap;
+    flex-shrink: 0;
   }
 
-  /* Logo and nav adjustment */
   header {
     flex-direction: column;
     align-items: center;
@@ -398,15 +404,15 @@ h1::first-letter {
   }
 
   header h1 {
-    margin-left: 0;
     font-size: 1.5rem;
+    margin-left: 0;
   }
 
   h1::first-letter {
     font-size: 2.2rem;
   }
 
-  /* Hero images horizontally aligned */
+  /* Hero images */
   .container {
     flex-direction: row;
     overflow-x: auto;
@@ -415,25 +421,28 @@ h1::first-letter {
   }
 
   .hero img {
-    width: 140px;
-    height: 130px;
+    width: 130px;
+    height: 120px;
     flex-shrink: 0;
   }
 
-  /* Side image smaller, text aligned left */
+  /* Side image smaller with gap */
   .dishes {
     position: relative;
     right: auto;
     justify-content: flex-end;
-    height: auto;
+    margin-top: 20px;
   }
 
   .dishes img {
-    height: 160px;
+    height: 150px;
     border-radius: 50px;
     margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
   }
 
+  /* Text block before side image */
   .hero-block {
     flex-direction: column;
     align-items: flex-start;
@@ -453,7 +462,7 @@ h1::first-letter {
     text-align: left;
   }
 
-  /* Action buttons alignment */
+  /* Action buttons (Buy & Explore) */
   .action {
     flex-direction: row;
     justify-content: flex-start;
@@ -461,11 +470,18 @@ h1::first-letter {
     margin-left: 10px;
   }
 
-  /* Dishes scroll horizontally in pairs */
+  .action button {
+    font-size: 1rem;
+    padding: 8px 14px;
+  }
+
+  /* Dish menu scroll horizontally in pairs */
   .menu-items {
     flex-wrap: nowrap;
     overflow-x: auto;
+    gap: 16px;
     padding: 20px 10px;
+    margin-top: 30px;
   }
 
   .menu-items .item {
@@ -491,10 +507,7 @@ h1::first-letter {
     font-size: 1rem;
   }
 
-  .about h2 {
-    font-size: 2rem;
-  }
-
+  .about h2,
   .contact h2 {
     font-size: 2rem;
   }
@@ -508,4 +521,3 @@ h1::first-letter {
     padding: 8px;
   }
 }
-
