@@ -555,7 +555,6 @@ h1::first-letter {
   }
 
 
-
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
