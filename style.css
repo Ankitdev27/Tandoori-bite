@@ -375,3 +375,137 @@ h1::first-letter {
   font-size: 1.2rem;
 }
 
+@media (max-width: 480px) {
+  /* Navbar stays horizontal and scrollable if needed */
+  .nav-links {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+    padding: 10px 15px;
+    white-space: nowrap;
+  }
+
+  /* Logo and nav adjustment */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  header h1 {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+
+  h1::first-letter {
+    font-size: 2.2rem;
+  }
+
+  /* Hero images horizontally aligned */
+  .container {
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 16px;
+  }
+
+  .hero img {
+    width: 140px;
+    height: 130px;
+    flex-shrink: 0;
+  }
+
+  /* Side image smaller, text aligned left */
+  .dishes {
+    position: relative;
+    right: auto;
+    justify-content: flex-end;
+    height: auto;
+  }
+
+  .dishes img {
+    height: 160px;
+    border-radius: 50px;
+    margin-right: 10px;
+  }
+
+  .hero-block {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    height: auto;
+  }
+
+  .hungry button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+  }
+
+  .hungry p,
+  .hungry span {
+    font-size: 2.2rem;
+    text-align: left;
+  }
+
+  /* Action buttons alignment */
+  .action {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-left: 10px;
+  }
+
+  /* Dishes scroll horizontally in pairs */
+  .menu-items {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px 10px;
+  }
+
+  .menu-items .item {
+    flex: 0 0 auto;
+    width: 160px;
+  }
+
+  .menu-items .item img {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* Why Choose Us - stacked vertically */
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .about-content h3,
+  .about-content p {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact form {
+    width: 90%;
+  }
+
+  .end p {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
+
